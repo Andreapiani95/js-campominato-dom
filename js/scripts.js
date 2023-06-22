@@ -1,5 +1,8 @@
+const bombArray = [];
+
 document.getElementById('grid-generator').addEventListener('click',
     function (){
+        const bombArray = [];
         document.querySelector('.grid').innerHTML = "";
         document.getElementById('output').innerHTML = "";
         createGrid(100);
@@ -9,13 +12,13 @@ document.getElementById('grid-generator').addEventListener('click',
         
             if (!bombArray.includes(bombNumber)){
                 bombArray.push(bombNumber);
-            }console.log(bombNumber);
+            }console.log(bombArray, bombArray[i]);
         }
     }
 );
 
 const selectedCell = []
-const bombArray = [];
+
 
 function createGrid(cellNumber){
     for (i = 1; i <= cellNumber; i++){
