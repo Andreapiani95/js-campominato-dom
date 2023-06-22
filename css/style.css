@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    text-align: center;
+    background-color: salmon;
+}
+
 .grid{
     display: flex;
-    width: 1000px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
     margin: auto;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+
 .flex-cell{
-    width: calc(100% / 10);
-    height: 100px;
+    width: 10%;
+    height: 60px;
     border: 1px solid black;
     text-align: center;
 }
